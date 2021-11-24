@@ -1,0 +1,64 @@
+﻿:root {
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    box-sizing:border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.container {
+    display: flex;
+    width: 90vh;
+}
+.container-self {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    flex: 0.5;
+    position: relative;
+    margin: 10px;
+    transition: flex 0.7s ease-in;
+}
+.panel_1{
+    background-image:url('./../img/city_01.png');
+}
+.panel_2 {
+    background-image: url('./../img/city_02.png');
+}
+.panel_3 {
+    background-image: url('./../img/city_03.png');
+}
+.panel_4 {
+    background-image: url('./../img/city_04.png');
+}
+.panel_5 {
+    background-image: url('./../img/city_05.png');
+}
+.panel_6 {
+    background-image: url('./../img/city_06.png');
+}
+div > h3{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    margin:0;
+    opacity:0;
+}
+.active{
+    flex:5;
+}
+.active h3{
+    opacity:1;
+    transition: opacity 0.4s ease-in 0.4s; 
+}
